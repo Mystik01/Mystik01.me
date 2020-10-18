@@ -1,0 +1,143 @@
+body {
+    background-image: url("../images/background.jpg") ;
+    background-repeat: no-repeat ;
+    background-attachment: fixed ;
+    background-position: top ;
+    }
+
+#header {
+    font-family: Segoe UI light;
+    background-color: #50c3b6 ;
+    color: white ;
+    text-align: center;
+}
+
+#slidename {
+    margin-top: 37px ;
+    text-align: center ;
+}
+
+#row1 {
+    position: relative ;
+    width: auto ;
+    height: 0px ;
+    margin-left: auto ;
+    margin-right: auto ;
+    margin-top: 27px ;
+    color: white ;
+    text-align: center ;
+   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;  use this to add drop shadow */
+    white-space: nowrap ;
+    background-color: white ;
+}
+
+#row2 {
+    position: relative ;
+    width: auto ;
+    height: 0px ;
+    margin-left: auto ;
+    margin-right: auto ;
+    margin-top: 235px ;
+    color: white ;
+    text-align: center ;
+   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;  use this to add drop shadow */
+    white-space: nowrap ;
+}
+
+#row3 {
+    position: relative ;
+    width: auto ;
+    height: 0px ;
+    margin-left: auto ;
+    margin-right: auto ;
+    margin-top: 235px ;
+    text-align: center ;
+    color: white ;
+   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;  use this to add drop shadow */
+    white-space: nowrap ;
+}
+
+#tiles {
+    display: inline-block ;
+    float: inherit ;
+   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ; */
+}
+
+/* zoom */
+
+#zoom {
+    display: inline-grid;
+    position: relative ;
+    height: 235px ;
+    width: 235px ;
+    transition: transform .2s ;
+    margin-top: 0px ;
+}
+
+#zoom:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
+
+#crossfade {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+
+#crossfade img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+#crossfade img.top:hover {
+  opacity:0;
+}
+
+#footer {
+    font-family: Segoe UI light ;
+    text-align: center ;
+    color: white ;
+    margin-top: 0px ;
+    text-shadow: 1px 1px 1px black ;
+}
+
+.swiper-container {
+    width: 1235px ;
+    height: 920px ;
+    padding-left: 40px ;
+}
+
+#calendar {
+    margin-top: 60px ;
+    margin-left: 80px ;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ; */
+}
+
+#twitter {
+    display: inline-grid ;
+    margin-top: 30px ;
+    padding-left: 55px ;
+}
+
+* {box-sizing: border-box;}
+
+.img-magnifier-container {
+  position: relative;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 10%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 380px;
+  height: 200px;
+}

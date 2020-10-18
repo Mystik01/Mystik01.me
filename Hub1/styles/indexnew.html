@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Eggar's HUB</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css">
+        <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                   
+            </div>
+            
+            <! tiles >
+            
+            <! row 1 >
+            <!-- Slider main container -->
+                    <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+     <div class="swiper-slide">
+                            
+                            <div id="slidename">
+                                <img src="images/calendart.png">
+                            </div>
+         
+        <script>
+            function magnify(imgID, zoom) {
+              var img, glass, w, h, bw;
+              img = document.getElementById(imgID);
+              /*create magnifier glass:*/
+              glass = document.createElement("DIV");
+              glass.setAttribute("class", "img-magnifier-glass");
+              /*insert magnifier glass:*/
+              img.parentElement.insertBefore(glass, img);
+              /*set background properties for the magnifier glass:*/
+              glass.style.backgroundImage = "url('" + img.src + "')";
+              glass.style.backgroundRepeat = "no-repeat";
+              glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
+              bw = 3;
+              w = glass.offsetWidth / 2;
+              h = glass.offsetHeight / 2;
+              /*execute a function when someone moves the magnifier glass over the image:*/
+              glass.addEventListener("mousemove", moveMagnifier);
+              img.addEventListener("mousemove", moveMagnifier);
+              /*and also for touch screens:*/
+              glass.addEventListener("touchmove", moveMagnifier);
+              img.addEventListener("touchmove", moveMagnifier);
+              function moveMagnifier(e) {
+                var pos, x, y;
+                /*prevent any other actions that may occur when moving over the image*/
+                e.preventDefault();
+                /*get the cursor's x and y positions:*/
+                pos = getCursorPos(e);
+                x = pos.x;
+                y = pos.y;
+                /*prevent the magnifier glass from being positioned outside the image:*/
+                if (x > img.width - (w / zoom)) {x = img.width - (w / zoom);}
+                if (x < w / zoom) {x = w / zoom;}
+                if (y > img.height - (h / zoom)) {y = img.height - (h / zoom);}
+                if (y < h / zoom) {y = h / zoom;}
+                /*set the position of the magnifier glass:*/
+                glass.style.left = (x - w) + "px";
+                glass.style.top = (y - h) + "px";
+                /*display what the magnifier glass "sees":*/
+                glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
+              }
+              function getCursorPos(e) {
+                var a, x = 0, y = 0;
+                e = e || window.event;
+                /*get the x and y positions of the image:*/
+                a = img.getBoundingClientRect();
+                /*calculate the cursor's x and y coordinates, relative to the image:*/
+                x = e.pageX - a.left;
+                y = e.pageY - a.top;
+                /*consider any page scrolling:*/
+                x = x - window.pageXOffset;
+                y = y - window.pageYOffset;
+                return {x : x, y : y};
+              }
+            }
+            </script>
+                    
+                    
+                    <div id="calendar"> 
+                        <iframe width="1150" height="700" frameborder="0" scrolling="no" src="https://eggars.sharepoint.com/:x:/s/Calendar/EeGkV350q7RPk2QI3b9wd48BtE7C-jEZkvTpEKGC9FqmFQ?e=clNTOU sourcedoc={f88e1235-6e10-4d8d-934b-1e71382919d3}&action=embedview&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
+                            
+                    </div>
+         
+                        
+    </div>
+                
+                        <div class="swiper-slide">
+                            
+            <div id="slidename">
+                  <img src="images/hub.png">
+            </div>
+                        
+            <div id="row1">
+                <div id="zoom">
+                    <div id="crossfade">
+                        <div id="tiles">
+                            <a href="https://eggars.sharepoint.com/:x:/r/sites/Calendar/Shared%20Documents/Calendar%202018%202019.xlsx?d=w7e57a4e1ab744fb4936408ddbf70778f&csf=1&e=W9S9TT" target="_blank"><img class="bottom" src="images/cal2.jpg" alt="Calendar2"></a>
+                            <a href="https://eggars.sharepoint.com/:x:/r/sites/Calendar/Shared%20Documents/Calendar%202018%202019.xlsx?d=w7e57a4e1ab744fb4936408ddbf70778f&csf=1&e=W9S9TT" target="_blank"><img class="top" src="images/cal1.jpg" alt="Calendar1"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="zoom">
+                    <div id="crossfade">
+                        <div id="tiles">
+                            <a href="https://eggars.showmyhomework.co.uk/" target="_blank"><img class="bottom" src="images/smhw2.jpg" alt="Show My Homework2"></a>
+                            <a href="https://eggars.showmyhomework.co.uk/" target="_blank"><img class="top" src="images/smhw1.jpg" alt="Show My Homework1"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="zoom">
+                    <div id="crossfade">
+                        <div id="tiles">
+                            <a href="http://www.eggars.net" target="_blank"><img class="bottom" src="images/eggarsnet2.jpg" alt="Eggar's net2"></a>
+                            <a href="http://www.eggars.net" target="_blank"><img class="top" src="images/eggarsnet1.jpg" alt="Eggar's net1"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="zoom">
+                    <div id="crossfade">
+                        <div id="tiles">
+                            <a href="https://outlook.office365.com" target="_blank"><img class="bottom" src="images/365mailn2.jpg" alt="Webmail2"></a>
+                            <a href="https://outlook.office365.com" target="_blank"><img class="top" src="images/365mailn1.jpg" alt="Webmail1"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="zoom">
+                    <div id="crossfade">
+                        <div id="tiles">
+                            <a href="https://app.epraise.co.uk/index.php?school=eggars&login=staff" target="_blank"><img class="bottom" src="images/epraise2.jpg" alt="ePraise2"></a>
+                            <a href="https://app.epraise.co.uk/index.php?school=eggars&login=staff" target="_blank"><img class="top" src="images/epraise1.jpg" alt="ePraise1"></a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+                            
+            <div id="row2">
+                <div id="zoom">
+                    <div id="crossfade">
+                        <div id="tiles">
+                            <a href="https://members.gcsepod.com/login?redirect_to=https%3A%2F%2Fmembers.gcsepod.com%2F" target="_blank"><img class="bottom" src="images/gcsepod2.jpg" alt="GCSEPod2"></a>
+                            <a href="https://members.gcsepod.com/login?redirect_to=https%3A%2F%2Fmembers.gcsepod.com%2F" target="_blank"><img class="top" src="images/gcsepod1.jpg" alt="GCSEPod1"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="zoom">
+                    <div id="crossfade">
+                        <div id="tiles">
+                            <a href="https://www.parents-booking.co.uk/login.jsp" target="_blank"><img class="bottom" src="images/parent2.jpg" alt="Parents Evening2"></a>
+                            <a href="https://www.parents-booking.co.uk/login.jsp" target="_blank"><img class="top" src="images/parent1.jpg" alt="Parents evening1"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="zoom">
+                    <div id="crossfade">
+                        <div id="tiles">
+                            <a href="whoswho.html" target="_blank"><img class="bottom" src="images/who2.jpg" alt="Who's Who2"></a>
+                            <a href="whoswho.html" target="_blank"><img class="top" src="images/who1.jpg" alt="Who's Who1"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="zoom">
+                    <div id="crossfade">
+                        <div id="tiles">
+                            <a href="videoguides.html"><img class="bottom" src="images/vidguide2.jpg" alt="Who's Who2"></a>
+                            <a href="videoguides.html"><img class="top" src="images/vidguide1.jpg" alt="Who's Who1"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="zoom">
+                    <div id="crossfade">
+                        <div id="tiles">
+                            <a href="https://portal.office.com" target="_blank"><img class="bottom" src="images/3652.jpg" alt="Office 3652"></a>
+                            <a href="https://portal.office.com" target="_blank"><img class="top" src="images/3651.jpg" alt="Office 3651"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <div id="row3">
+                <div id="zoom">
+                    <div id="crossfade">
+                        <div id="tiles">
+                            <a href="https://goo.gl/forms/b6Wx6ZIZ2ibSd7JB3" target="_blank"><img class="bottom" src="images/serv2.jpg" alt="Service Excelence"></a>
+                            <a href="https://goo.gl/forms/b6Wx6ZIZ2ibSd7JB3" target="_blank"><img class="top" src="images/serv1.jpg" alt="Service Excelence"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="zoom">
+                    <div id="crossfade">
+                        <div id="tiles">
+                            <a href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScfwtB3jDojbGnauSwEPROvN2kxrzOWpgySYT23zm2HoZQIbg/viewform?c=0&w=1&usp=send_form" target="_blank"><img class="bottom" src="images/sitereq2.jpg" alt="Site Requests2"></a>
+                            <a href="https://docs.google.com/forms/u/1/d/e/1FAIpQLScfwtB3jDojbGnauSwEPROvN2kxrzOWpgySYT23zm2HoZQIbg/viewform?c=0&w=1&usp=send_form" target="_blank"><img class="top" src="images/sitereq1.jpg" alt="Site Requests1"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="zoom">
+                    <div id="crossfade">
+                        <div id="tiles">
+                            <a href="itrequests.html" target="_blank"><img class="bottom" src="images/itreq2.jpg" alt="IT Requests2"></a>
+                            <a href="itrequests.html" target="_blank"><img class="top" src="images/itreq1.jpg" alt="IT Requests1"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="zoom">
+                    <div id="crossfade">
+                        <div id="tiles">
+                            <a href="https://secure.schoolbooking.com/eggars" target="_blank"><img class="bottom" src="images/book2.jpg" alt="Bookings2"></a>
+                            <a href="https://secure.schoolbooking.com/eggars" target="_blank"><img class="top" src="images/book1.jpg" alt="Bookings1"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="zoom">
+                    <div id="crossfade">
+                        <div id="tiles">
+                            <a href="https://goo.gl/forms/OVyr19IzGddBqcOU2" target="_blank"><img class="bottom" src="images/near2.jpg" alt="Near Miss2"></a>
+                            <a href="https://goo.gl/forms/OVyr19IzGddBqcOU2" target="_blank"><img class="top" src="images/near1.jpg" alt="Near Miss1"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                            
+                        </div>
+                        
+                        <div class="swiper-slide">
+                        
+                            <div id="slidename">
+                                <img src="images/more.png">
+                            </div>
+                            
+            <div id="row1">
+                <div id="zoom">
+                    <div id="crossfade">
+                        <div id="tiles">
+                            <a href="https://www.educake.co.uk/" target="_blank"><img class="bottom" src="images/educake2.jpg" alt="Educake2"></a>
+                            <a href="https://www.educake.co.uk/" target="_blank"><img class="top" src="images/educake1.jpg" alt="Educake1"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="zoom">
+                    <div id="crossfade">
+                        <div id="tiles">
+                            <a href="https://v2.blueskyeducation.co.uk/login" target="_blank"><img class="bottom" src="images/blue2.jpg" alt="Bluesky2"></a>
+                            <a href="https://v2.blueskyeducation.co.uk/login" target="_blank"><img class="top" src="images/blue1.jpg" alt="Bluesky1"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="zoom">
+                    <div id="crossfade">
+                        <div id="tiles">
+                            <a href="https://www.sisraanalytics.co.uk/Account/Login?ReturnUrl=%2f" target="_blank"><img class="bottom" src="images/sisra2.jpg" alt="Sisra2"></a>
+                            <a href="https://www.sisraanalytics.co.uk/Account/Login?ReturnUrl=%2f" target="_blank"><img class="top" src="images/sisra1.jpg" alt="Sisra1"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="zoom">
+                    <div id="crossfade">
+                        <div id="tiles">
+                            <a href="https://vle.mathswatch.co.uk/vle/" target="_blank"><img class="bottom" src="images/mathw2.jpg" alt="Maths Watch2"></a>
+                            <a href="https://vle.mathswatch.co.uk/vle/" target="_blank"><img class="top" src="images/mathw1.jpg" alt="Maths Watch1"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="zoom">
+                    <div id="crossfade">
+                        <div id="tiles">
+                            <img class="bottom" src="images/blank.png" alt="">
+                            <img class="top" src="images/blank.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+                                
+            <div id="row2">
+                <div id="zoom">
+                    <div id="crossfade">
+                        <div id="tiles">
+                            <a href="https://englishapp.pixl.org.uk/PiXLit2.html" target="_blank"><img class="bottom" src="images/pixlenglish2.jpg" alt="MathsWatch2"></a>
+                            <a href="https://englishapp.pixl.org.uk/PiXLit2.html" target="_blank"><img class="top" src="images/pixlenglish1.jpg" alt="MathsWatch1"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="zoom">
+                    <div id="crossfade">
+                        <div id="tiles">
+                            <a href="https://historyapp.pixl.org.uk/History%20App2.html" target="_blank"><img class="bottom" src="images/pixlhistory2.jpg" alt="MathsWatch2"></a>
+                            <a href="https://historyapp.pixl.org.uk/History%20App2.html" target="_blank"><img class="top" src="images/pixlhistory1.jpg" alt="MathsWatch1"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="zoom">
+                    <div id="crossfade">
+                        <div id="tiles">
+                            <a href="https://mathsapp.pixl.org.uk/PMA2.html" target="_blank"><img class="bottom" src="images/pixlmaths2.jpg" alt="MathsWatch2"></a>
+                            <a href="https://mathsapp.pixl.org.uk/PMA2.html" target="_blank"><img class="top" src="images/pixlmaths1.jpg" alt="MathsWatch1"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="zoom">
+                    <div id="crossfade">
+                        <div id="tiles">
+                            <a href="https://geographyapp.pixl.org.uk/Geography%20App2.html" target="_blank"><img class="bottom" src="images/pixlgeog2.jpg" alt="MathsWatch2"></a>
+                            <a href="https://geographyapp.pixl.org.uk/Geography%20App2.html" target="_blank"><img class="top" src="images/pixlgeog1.jpg" alt="MathsWatch1"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="zoom">
+                    <div id="crossfade">
+                        <div id="tiles">
+                            <img class="bottom" src="images/blank.png" alt="">
+                            <img class="top" src="images/blank.png" alt="">
+                        </div>
+                    </div>
+                </div> 
+            </div>
+                    
+                <div id="row3">
+                <div id="zoom">
+                    <div id="crossfade">
+                        <div id="tiles">
+                            <img class="bottom" src="images/blank.png" alt="">
+                            <img class="top" src="images/blank.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="zoom">
+                    <div id="crossfade">
+                        <div id="tiles">
+                            <img class="bottom" src="images/blank.png" alt="">
+                            <img class="top" src="images/blank.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="zoom">
+                    <div id="crossfade">
+                        <div id="tiles">
+                            <img class="bottom" src="images/blank.png" alt="">
+                            <img class="top" src="images/blank.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="zoom">
+                    <div id="crossfade">
+                        <div id="tiles">
+                            <img class="bottom" src="images/blank.png" alt="">
+                            <img class="top" src="images/blank.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="zoom">
+                    <div id="crossfade">
+                        <div id="tiles">
+                            <img class="bottom" src="images/blank.png" alt="">
+                            <img class="top" src="images/blank.png" alt="">
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+                               
+        
+                            
+                        
+                        
+                    <div class="swiper-slide">
+                        
+                        <div id="slidename">
+                                <img src="images/social.png">
+                        </div>
+                        
+                        <div id="twitter">
+                            <a class="twitter-timeline" data-height="665" data-width="500" data-theme="light" data-link-color="#50c3b6" href="https://twitter.com/eggars?ref_src=twsrc%5Etfw">Tweets by eggars</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                        <div id="twitter">
+                            <a class="twitter-timeline" data-width="500" data-height="665" data-link-color="#50c3b6" href="https://twitter.com/eggarscommunity?ref_src=twsrc%5Etfw">Tweets by eggarscommunity</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </div>
+                        ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <!<div class="swiper-scrollbar"></div>
+                </div>
+            
+            
+            
+            
+            <! footer >
+            
+            <div id="footer">
+                <img src="images/copy.png">
+            </div>
+        </div>
+        <script src="jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
+        <script src="swiper.js"></script>
+        
+        <script>
+  var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+    initialSlide: 1,  
+    spaceBetween: 100,
+    mousewheel: true,
+    
+      
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      
+    },
+          
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+          
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  })
+  </script>
+        
+        <script>
+            /*Execute the magnify function:*/
+            magnify("myimage", 1.9);
+            /*Specify the id of the image, and the strength of the magnifier glass:*/ 
+        </script>
+    </body>
+</html>

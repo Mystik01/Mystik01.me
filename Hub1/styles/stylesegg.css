@@ -1,0 +1,73 @@
+body {
+    background-image: url("../images/background.jpg") ;
+    background-repeat: no-repeat ;
+    background-attachment: fixed ;
+    background-position: top ;
+    text-align: center ;
+}
+
+#slidename {
+    margin-top: 38px ;
+    text-align: center ;
+}
+
+#container {
+    display: inline-block ;
+    text-align: center ;
+}
+
+#row1 {
+    margin-top: 18px ;
+}
+
+#row2 {
+    
+}
+
+#row3 {
+    text-align: center ;
+    margin-right: 230px ;
+}
+
+#tiles {
+    display: inline-block ;
+    float: inherit ;
+   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ; */
+}
+
+/* zoom */
+
+#zoom {
+    display: inline-grid;
+    position: relative ;
+    height: 235px ;
+    width: 235px ;
+    transition: transform .2s ;
+    margin-top: 0px ;
+}
+
+#zoom:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
+
+#crossfade {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+
+#crossfade img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+#crossfade img.top:hover {
+  opacity:0;
+}
