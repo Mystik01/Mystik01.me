@@ -2,7 +2,7 @@
     "$schema": "http://mystik01.me/schema.json",
     "$id": "http://mystik01.me/schema.json",
     "type": "object",
-    "title": "The root schema",
+    "title": "config",
     "description": "The root schema comprises the entire JSON document.",
     "default": {},
     "examples": [
