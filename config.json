@@ -1,6 +1,6 @@
 {
-    "$id": "http://mystik01.me/config.json",
-    "$schema": "http://mystik01.me/config.json",
+    "$id": "http://mystik01.me/schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema",
     "default": {},
     "description": "The root schema comprises the entire JSON document.",
     "examples": [
@@ -93,27 +93,10 @@
                     "RoleId2"
                 ]
             ],
-            "title": "The ModeratorRoles schema",
             "maxLength": 18,
-            "pattern": "[0-9]",
+            "title": "The ModeratorRoles schema",
             "type": "array",
-            "additionalItems": true,
-            "items": {
-                "$id": "#/properties/ModeratorRoles/items",
-                "anyOf": [
-                    {
-                        "$id": "#/properties/ModeratorRoles/items/anyOf/0",
-                        "type": "string",
-                        "title": "The first anyOf schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": "",
-                        "examples": [
-                            "RoleId1",
-                            "RoleId2"
-                        ]
-                    }
-                ]
-            }
+            "additionalItems": true
         },
         "EmbedAuthor": {
             "$id": "#/properties/EmbedAuthor",
@@ -123,31 +106,30 @@
                 "Modmail"
             ],
             "title": "The EmbedAuthor schema",
-            "maxLength": 18,
-            "pattern": "[0-9]",
             "type": "string"
         },
         "Category": {
             "$id": "#/properties/Category",
             "default": "",
-            "description": "An explanation about the purpose of this instance.",
+            "description": "Enter a category ID for tickets",
             "examples": [
                 "Category-ID-For-Tickets"
             ],
-            "title": "The Category schema",
             "maxLength": 18,
             "pattern": "[0-9]",
+            "title": "The Category schema",
             "type": "string"
         },
         "LogChannel": {
             "$id": "#/properties/LogChannel",
-            "type": "string",
-            "title": "The LogChannel schema",
-            "description": "An explanation about the purpose of this instance.",
             "default": "",
+            "description": "An explanation about the purpose of this instance.",
             "examples": [
                 "Channel-ID-to-log-tickets"
-            ]
+            ],
+            "title": "The LogChannel schema",
+            "pattern": "[0-9]",
+            "type": "string"
         },
         "EmbedPfp": {
             "$id": "#/properties/EmbedPfp",
