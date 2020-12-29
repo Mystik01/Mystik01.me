@@ -1,10 +1,8 @@
 {
-    "$schema": "http://mystik01.me/schema.json",
     "$id": "http://mystik01.me/schema.json",
-    "type": "object",
-    "title": "config",
-    "description": "The root schema comprises the entire JSON document.",
+    "$schema": "http://json-schema.org/draft-07/schema",
     "default": {},
+    "description": "The root schema comprises the entire JSON document.",
     "examples": [
         {
             "prefix": "?",
@@ -36,6 +34,8 @@
         "EmbedColour",
         "token"
     ],
+    "title": "config",
+    "type": "object",
     "properties": {
         "prefix": {
             "$id": "#/properties/prefix",
@@ -51,25 +51,25 @@
             "$id": "#/properties/language",
             "default": "",
             "description": "An explanation about the purpose of this instance.",
-            "examples": [
-                "en"
-            ],
-            "title": "The language schema",
             "enum": [
                 "es",
                 "en"
             ],
+            "examples": [
+                "en"
+            ],
+            "title": "The language schema",
             "type": "string"
         },
         "bot-name": {
             "$id": "#/properties/bot-name",
-            "type": "string",
-            "title": "The bot-name schema",
-            "description": "An explanation about the purpose of this instance.",
             "default": "",
+            "description": "An explanation about the purpose of this instance.",
             "examples": [
                 "YOUR-BOT-NAME"
-            ]
+            ],
+            "title": "Your bots name",
+            "type": "string"
         },
         "serverID": {
             "$id": "#/properties/serverID",
@@ -156,8 +156,8 @@
             "examples": [
                 "https;//modmail.com/modmail.png"
             ],
+            "pattern": "(http||https)://[a-z].[a-z]/[a-z].[a-z]",
             "title": "The EmbedPfp schema",
-            "pattern": "https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)",
             "type": "string"
         },
         "EmbedColour": {
